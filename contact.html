@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        ol, ul{
+            list-style-type: none;
+            font-style: bold;
+            -webkit-text-fill-color: #c3f33f;
+        }
+        body{
+            background-color: rgb(42, 69, 189);
+            margin: 0 10%;
+            font-family: sans-serif;
+        }
+        h1{
+            text-align: center;
+            position: relative;
+            font-size: larger;
+            font-family:  serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            border-bottom: 1px solid white;
+            margin-top: 30px;
+            -webkit-text-fill-color: #c3f33f;
+            font-size: x-large;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .btn:focus {
+            outline: 2px solid #2e7d32;
+            background-color: #3e8e41;
+        }
+
+        .btn:active {
+            background-color: #2e7d32;
+            transform: scale(0.98);
+        }
+
+        .btn-reset {
+            background-color: #f44336;
+        }
+
+        .btn-reset:hover {
+            background-color: #da190b;
+        }
+
+        .btn-reset:focus {
+            outline: 2px solid #b71c1c;
+            background-color: #c62828;
+        }
+
+        .btn-reset:active {
+            background-color: #b71c1c;
+            transform: scale(0.98);
+        }
+        fieldset{
+            border: double 4px white;
+            border-radius: 15px;
+            -webkit-text-fill-color: #c3f33f;
+            
+        }
+        input, textarea, select {
+        border-radius: 10px; /* You can increase for more rounded corners */
+        padding: 8px;
+        border: 1px solid #9ecbf5;
+        font-size: 14px;
+        -webkit-text-fill-color: rgb(42, 69, 189);
+        }
+
+        input:focus, textarea:focus, select:focus {
+        outline: none;
+        border-color: #2edf17;
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+        legend{
+            font-size: x-large;
+        }
+        .Logo{
+            float: center;
+            margin: 1em;
+            max-width: 10%; 
+            max-height: 10%;
+            border-radius: 80px;
+            display: block;
+            margin: 0 auto 5px;
+            box-shadow: 0 4px 8px rgba(14, 230, 111, 0.3); 
+        }
+        .Logo:hover{
+            max-width: 12%; 
+            max-height: 12%;
+            border-radius: 120px;
+        }
+    </style>
+
+    <title>ContactUs</title>
+</head>
+<body>
+    <form action="mailto: asadullomirzaaxmedov10@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+    <h1>
+        <img class="Logo" src="Images/Logo.jpeg">
+        <p>Kindly fill out the form before sending your inquiry.</p>
+    </h1>
+    <fieldset>
+        <legend>Your Information</legend>
+        <ul>
+            <li><label for="form-name">Full Name:</label><input type="text" name="customername" required></li>
+            <li><label for="form-name">Telephone Number:</label><input type="text" name="telephone" required></li>
+            <li><label for="form-name">Email:</label><input type="email" name="email"required></li>
+            <li><label for="form-name">Your city</label><br><input type="text" name="city" required></li>
+            <li>
+        </u>
+    </fieldset>
+    </fieldset><br>
+    <fieldset>
+        <legend>Please select the topic your message is related to</legend>
+    
+    <ul>
+        <li><label><input type="checkbox" name="Regarding" value="Armchairs" checked>Armchairs</li></label>
+        <li><label><input type="checkbox" name="Regarding" value="Beds">Beds</li></label>
+        <li><label><input type="checkbox" name="Regarding" value="Chairs">Chairs</li></label>
+        <li><label><input type="checkbox" name="Regarding" value="Desks">Desks</li></label>
+        <li><label><input type="checkbox" name="Regarding" value="Dressers">Dressers</li></label>
+        <li><label><input type="checkbox" name="Regarding" value="Sofas">Sofas</li></label>
+        <li><label><input type="checkbox" name="Regarding" value="Tables">Tables</li></label>
+        <li><label><input type="checkbox" name="Regarding" value="Wardrobes">Wardrobes</li></label>
+        <li><label><input type="checkbox" name="Regarding" value="Other">Other</li></label>
+    </ul>
+    </fieldset><br>
+    <fieldset>
+        <ul>
+        <legend>Your Inquiry</legend>
+        <li><label for="form-name"></label><br><textarea name="Inquiry" rows="4" cols="60" maxlength="800" placeholder="No more than 800 characters long"></textarea></li>
+        </ul>  
+    </fieldset>
+    
+    <p><input type="submit" value="Submit" class="btn"></p>
+    <p><input type="reset" value="Reset" class="btn btn-reset"></p>
+
+    </form>
+    <script>
+        function validateForm() {
+          // Get field values
+          let name = document.getElementById('name').value.trim();
+          let phone = document.getElementById('phone').value.trim();
+          let email = document.getElementById('email').value.trim();
+          let country = document.getElementById('country').value.trim();
+          let inquiry = document.getElementById('inquiry').value.trim();
+
+    
+          if (!name || !phone || !email || !country || !inquiry) {
+            alert("Please fill in all required fields.");
+            return false; 
+          }
+    
+          return true; 
+        }
+        document.write("Thank you for your inquiry! We’ll get back to you soon.");
+        return true;
+      </script>
+</body>
+</html>

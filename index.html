@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<body>
+    <!-- All Header codes are here -->
+    <header>
+        <!-- Creates menu-button on the header -->
+        <div class="menu-button" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="dropdown" class="dropdown-menu">
+            <a href="Contact.html" target="_blank">Contact us</a>
+            <a href="#About">Information about us</a>
+            <a href="basket.html" target="_blank">Basket</a>
+        </div>
+        
+        <div class="NewHeader">
+        <img src="images/Logo.jpeg" alt="Furniture Logo" class="Logo">
+        <h1 class="typing"><br>Welcome to online Furniture Shop</h1>
+        </div>
+        <!-- Creates navigation bar on the header -->
+        <nav id="HeaderNav">
+            <a href="#armchairs">Armchairs</a>
+            <a href="#beds">Beds</a>
+            <a href="#chairs">Chairs</a>
+            <a href="#desks">Desks</a>
+            <a href="#dressers">Dressers</a>
+            <a href="#sofas">Sofas</a>
+            <a href="#tables">Tables</a>
+            <a href="#wardrobes">Wardrobes</a> 
+        </nav> 
+    </header>
+    <!-- All Header codes are here -->
+
+    <h1>Furniture Gallery</h1>
+    <section id="armchairs" class="furniture-section">
+        <div class="section-header">Armchairs</div>
+        <div class="image-row">
+            <div class="image-item">
+                <img src="Images/Armchairs/Brigette Olive Green.webp" alt="armchair1"/>
+                <p>Brigette Olive Green</p>
+                <button onclick="addToBasket('Brigette Olive Green ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Armchairs/DUSK Hebden Loveseat.webp" alt="armchair2"/>
+                <p>Hebden Loveseat</p>
+                <button onclick="addToBasket('DUSK Hebden Loveseat ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Armchairs/DUSK Shoreditch Loveseat.webp" alt="armchair3"/>
+                <p>Shoreditch Loveseat</p>
+                <button onclick="addToBasket('Shoreditch Loveseat ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Armchairs/DUSK Sicily.webp" alt="armchair4"/>
+                <p>DUSK Sicily</p>
+                <button onclick="addToBasket('DUSK Sicily ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Armchairs/Timber Oatmeal.webp" alt="armchair5"/>
+                <p>Timber Oatmeal</p>
+                <button onclick="addToBasket('Timber Oatmeal ')">Add to Basket</button>
+            </div>
+        </div>    
+    </section><br>
+
+    <section id="beds" class="furniture-section">
+        <div class="section-header">Beds</div>
+        <div class="image-row">
+            <div class="image-item">
+                <img src="Images/Beds/DUSK Ascott Ottomon.webp" alt="bed1"/>
+                <p>Brigette Olive Green</p>
+                <button onclick="addToBasket('DUSK Ascott Ottomon ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Beds/Fillmore Solid.webp" alt="bed2"/>
+                <p>Fillmore Solid</p>
+                <button onclick="addToBasket('Fillmore Solid ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Beds/Manhattan Bed.webp" alt="bed3"/>
+                <p>Manhattan Bed</p>
+                <button onclick="addToBasket('Manhattan Bed ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Beds/Sade Vintage.webp" alt="bed4"/>
+                <p>Sade Vintage</p>
+                <button onclick="addToBasket('Sade Vintage ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Beds/Simba Ottoman.webp" alt="bed5"/>
+                <p>Simba Ottoman</p>
+                <button onclick="addToBasket('Simba Ottoman ')">Add to Basket</button>
+            </div>
+        </div>    
+    </section><br>
+
+    <section id="chairs" class="furniture-section">
+        <div class="section-header">Chairs</div>
+        <div class="image-row">
+            <div class="image-item">
+                <img src="Images/Chairs/Dining Chairs.webp" alt="chairs1"/>
+                <p>Dining Chairs</p>
+                <button onclick="addToBasket('Dining Chairs ')">Add to Basket</button>
+            </div>
+            
+            <div class="image-item">
+                <img src="Images/Chairs/Donna set.webp" alt="chairs2"/>
+                <p>Donna set</p>
+                <button onclick="addToBasket('Donna set ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Chairs/Mia Set.webp" alt="chairs3"/>
+                <p>Mia Set</p>
+                <button onclick="addToBasket('Mia Set ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Chairs/Nordic Linen.webp" alt="chairs4"/>
+                <p>Nordic Linen</p>
+                <button onclick="addToBasket('Nordic Linen ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Chairs/Warwick.webp" alt="chairs5"/>
+                <p>Warwick</p>
+                <button onclick="addToBasket('Warwick ')">Add to Basket</button>
+            </div>      
+        </div>    
+    </section><br>
+    
+    <section id="desks" class="furniture-section">
+        <div class="section-header">Desks</div>
+        <div class="image-row">
+            <div class="image-item">
+                <img src="Images/Desks/Computer Desk.webp" alt="desks1"/>
+                <p>Computer Desk</p>
+                <button onclick="addToBasket('Computer Desk ')">Add to Basket</button>
+            </div>
+            
+            <div class="image-item">
+                <img src="Images/Desks/George Olivier Beige.webp" alt="desks2"/>
+                <p>George Olivier Beige</p>
+                <button onclick="addToBasket('George Olivier Beige ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Desks/Maru Oval.webp" alt="desks3"/>
+                <p>Maru Oval</p>
+                <button onclick="addToBasket('Maru Oval ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Desks/Riley Desk.webp" alt="desks4"/>
+                <p>Riley Desk</p>
+                <button onclick="addToBasket('Riley Desk ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Desks/Rosa Solid Oak.webp" alt="desks5"/>
+                <p>Rosa Solid Oak</p>
+                <button onclick="addToBasket('Rosa Solid Oak ')">Add to Basket</button>
+            </div>      
+        </div>    
+    </section><br>
+
+    <section id="dressers" class="furniture-section">
+        <div class="section-header">Dressers</div>
+        <div class="image-row">
+            <div class="image-item">
+                <img src="Images/Dressers/Chesire Dove Grey.webp" alt="dressers1"/>
+                <p>Chesire Dove Grey</p>
+                <button onclick="addToBasket('Chesire Dove Grey ')">Add to Basket</button>
+            </div>
+            
+            <div class="image-item">
+                <img src="Images/Dressers/Dusk Elena.webp" alt="dressers2"/>
+                <p>Dusk Elena</p>
+                <button onclick="addToBasket('Dusk Elena ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Dressers/Francis Oak.webp" alt="dressers3"/>
+                <p>Francis Oak</p>
+                <button onclick="addToBasket('Francis Oak ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Dressers/Nell 5 Drawer.webp" alt="dressers4"/>
+                <p>Nell 5 Drawer</p>
+                <button onclick="addToBasket('Nell 5 Drawer ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Dressers/Thalia Concave.webp" alt="dressers5"/>
+                <p>Thalia Concave</p>
+                <button onclick="addToBasket('Thalia Concave ')">Add to Basket</button>
+            </div>      
+        </div>    
+    </section><br>
+
+    <section id="sofas" class="furniture-section">
+        <div class="section-header">Sofas</div>
+        <div class="image-row">
+            <div class="image-item">
+                <img src="Images/Sofas/Model 1.webp" alt="sofas1"/>
+                <p>Model 1</p>
+                <button onclick="addToBasket('Model 1 ')">Add to Basket</button>
+            </div>
+            
+            <div class="image-item">
+                <img src="Images/Sofas/Model 2.webp" alt="sofas2"/>
+                <p>Model 2</p>
+                <button onclick="addToBasket('Model 2 ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Sofas/Model 3.webp" alt="sofas3"/>
+                <p>Model 3</p>
+                <button onclick="addToBasket('Model 3 ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Sofas/Model 4.webp" alt="sofas4"/>
+                <p>Model 4</p>
+                <button onclick="addToBasket('Model 4 ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Sofas/Model 5.webp" alt="sofas5"/>
+                <p>Model 5</p>
+                <button onclick="addToBasket('Model 5 ')">Add to Basket</button>
+            </div>      
+        </div>    
+    </section><br>
+
+    <section id="tables" class="furniture-section">
+        <div class="section-header">Tables</div>
+        <div class="image-row">
+            <div class="image-item">
+                <img src="Images/Tables/Buxton oak.webp" alt="tables1"/>
+                <p>Buxton oak</p>
+                <button onclick="addToBasket('Buxton oak ')">Add to Basket</button>
+            </div>
+            
+            <div class="image-item">
+                <img src="Images/Tables/Dining Table.webp" alt="tables2"/>
+                <p>Dining Table</p>
+                <button onclick="addToBasket('Dining Table ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Tables/Dortsmouth oak.webp" alt="tables3"/>
+                <p>Dortsmouth oak</p>
+                <button onclick="addToBasket('Dortsmouth oak ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Tables/Extending Warwick.webp" alt="tables4"/>
+                <p>Extending Warwick</p>
+                <button onclick="addToBasket('Extending Warwick ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Tables/Kendal.webp" alt="tables5"/>
+                <p>Kendal</p>
+                <button onclick="addToBasket('Kendal ')">Add to Basket</button>
+            </div>      
+        </div>    
+    </section><br>
+
+    <section id="wardrobes" class="furniture-section">
+        <div class="section-header">Wardrobes</div>
+        <div class="image-row">
+            <div class="image-item">
+                <img src="Images/Wardrobes/Bradwell oak.webp" alt="wardrobes1"/>
+                <p>Bradwell oak</p>
+                <button onclick="addToBasket('Bradwell oak ')">Add to Basket</button>
+            </div>
+            
+            <div class="image-item">
+                <img src="Images/Wardrobes/Lawon oak.webp" alt="wardrobes2"/>
+                <p>Lawon oak</p>
+                <button onclick="addToBasket('Lawon oak ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Wardrobes/Minija.webp" alt="wardrobes3"/>
+                <p>Minija</p>
+                <button onclick="addToBasket('Minija ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Wardrobes/Ruby.webp" alt="wardrobes4"/>
+                <p>Ruby</p>
+                <button onclick="addToBasket('Ruby ')">Add to Basket</button>
+            </div>
+
+            <div class="image-item">
+                <img src="Images/Wardrobes/Samerton Curved.webp" alt="wardrobes5"/>
+                <p>Samerton Curved</p>
+                <button onclick="addToBasket('Samerton Curved ')">Add to Basket</button>
+            </div>      
+        </div>    
+    </section>
+     
+    
+   <!-- All Footer codes are here -->
+    <footer id="About">
+        <nav>
+        <div class="left-content">
+            <a>&copy; 2025 Furniture-Shop Website</a><br>
+            <a id="Me">Developed by Asadullo Mirzaakhmedov</a><br>
+            <a href="https://www.facebook.com/share/1CnSwrVvar/" target="_blank">
+                <img src="Images/fb.png" alt="Facebook" width="30" height="30"></a>
+                <a href="https://www.instagram.com/traveltogetheruz" target="_blank">
+                <img src="Images/ins.png" alt="Instagram"></a>
+        
+        </div>
+        <div class="content-wrap">
+        <div class="map-container">
+            <iframe 
+                id="smallMap"
+                src="https://www.google.com/maps?q=41.200307,69.237606&z=15&output=embed"
+                width="400" 
+                height="150">
+            </iframe>
+            <button onclick="openFullMap()">[]</button>
+        </div>
+
+     
+
+        <div class="video-section">
+            <iframe
+              width="220"
+              height="160"
+              src="https://www.youtube.com/embed/p6JsCT_18Cg"
+              title="Youtube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; 
+              encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+        </div>
+        </div>
+
+        </nav>
+    </footer>
+    <!-- Creating close button -->
+    <div id="fullscreenMap" class="fullscreen-map">
+        <span class="close-btn" onclick="closeFullMap()">CLOSE</span>
+        <iframe 
+          src="https://www.google.com/maps?q=41.200307,69.237606&z=15&output=embed"
+          width="100%" 
+          height="100%">
+        </iframe>
+      </div>
+    <!-- All Footer codes are here -->
+
+    <!-- All JavaScript codes are here -->
+    <script>
+        function toggleMenu(){
+            var menu = document.getElementById("dropdown");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+        function addToBasket(itemName){
+            let basket = localStorage.getItem("basket") || "";
+            let items = basket ? basket.split(",") : [];
+            items.push(itemName.trim());
+            localStorage.setItem("basket", items.join(","));
+            alert(itemName + "added to basket");
+        }
+        function openFullMap(){ 
+            document.getElementById("fullscreenMap").style.display = "block";
+        }
+        function closeFullMap(){
+            document.getElementById("fullscreenMap").style.display = "none";
+        }
+
+
+    </script>
+    <!-- All JavaScript codes are here -->
+    
+
+    
+</body>
+</html>
